@@ -45,7 +45,7 @@ async function getGasFees() {
         if (data.result) { // Check for the result key
             const gasPriceInWei = parseInt(data.result, 16); // Convert hex to decimal (Wei)
             const gasPriceInGwei = gasPriceInWei / 1e9; // Convert Wei to Gwei
-            console.log(`Current gas price: ${gasPriceInGwei} Gwei`);
+            console.log(`Current Ethereum gas price: ${gasPriceInGwei} Gwei`);
         } else {
             console.error('Error fetching gas prices:', data.message || 'Invalid response');
         }
